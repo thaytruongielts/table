@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Giảng IELTS Writing Task 1: Dạng Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 900px;
+            text-align: center;
+            position: relative;
+        }
+        .slide {
+            display: none;
+            text-align: left;
+            padding-bottom: 50px;
+        }
+        .slide.active {
+            display: block;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        h3 {
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .example-box {
+            background-color: #e8f5e9;
+            border-left: 5px solid #4CAF50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            font-style: italic;
+            color: #388e3c;
+        }
+        .tip-box {
+            background-color: #e3f2fd;
+            border-left: 5px solid #2196F3;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            color: #1976d2;
+        }
+        .warning-box {
+            background-color: #ffebee;
+            border-left: 5px solid #f44336;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        .interactive-question {
+            margin-top: 25px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px dashed #ccc;
+        }
+        .interactive-question p {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .interactive-question textarea {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: vertical;
+            min-height: 60px;
+            font-size: 1em;
+        }
+        .interactive-question .feedback {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            display: none;
+            font-weight: bold;
+        }
+        .interactive-question .feedback.correct {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .interactive-question .feedback.incorrect {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .controls {
+            margin-top: 20px;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+        .controls button {
+            padding: 12px 25px;
+            border: none;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        .controls button:hover {
+            background-color: #2980b9;
+        }
+        .controls button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        #slide-counter {
+            font-size: 1em;
+            color: #777;
+            align-self: center;
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .table-image {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Bài Giảng IELTS Writing Task 1: Dạng Table</h2>
+    <div id="slides-container">
+
+        <div class="slide active" data-slide-id="1">
+            <h3>Chào mừng đến với bài giảng IELTS Writing Task 1 - Dạng Table! 📊</h3>
+            <p>Dạng bài này yêu cầu bạn tóm tắt và so sánh thông tin từ một bảng dữ liệu. Đây là dạng bài khá phổ biến và đòi hỏi kỹ năng chọn lọc, nhóm và diễn giải số liệu một cách hiệu quả.</p>
+            <p>Chúng ta sẽ học cách phân tích bảng, xác định các điểm nổi bật và diễn đạt chúng bằng ngôn ngữ học thuật.</p>
+        </div>
+
+        <div class="slide" data-slide-id="2">
+            <h3>Cấu trúc bài viết Dạng Table</h3>
+            <p>Một bài viết Table cũng thường có cấu trúc 4 đoạn:</p>
+            <ul>
+                <li><strong>Đoạn 1: Mở bài (Introduction)</strong> - Giới thiệu chung về bảng.</li>
+                <li><strong>Đoạn 2: Tổng quan (Overview)</strong> - Nêu bật 2-3 đặc điểm chính (xu hướng, điểm cao nhất/thấp nhất...).</li>
+                <li><strong>Đoạn 3: Thân bài 1 (Body Paragraph 1)</strong> - Chi tiết các số liệu nổi bật đầu tiên.</li>
+                <li><strong>Đoạn 4: Thân bài 2 (Body Paragraph 2)</strong> - Chi tiết các số liệu đáng chú ý còn lại.</li>
+            </ul>
+            <div class="tip-box">
+                Đừng cố gắng liệt kê tất cả các con số trong bảng! Hãy chọn lọc và nhóm chúng lại.
+            </div>
+        </div>
+        
+        <div class="slide" data-slide-id="3">
+            <h3>Đoạn 1: Mở bài (Introduction)</h3>
+            <p>Paraphrase câu hỏi để giới thiệu bảng. Nêu rõ bảng chứa thông tin gì (chủ đề), đơn vị đo lường (nếu có), và mốc thời gian.</p>
+            <p><strong>Mẫu câu gợi ý:</strong></p>
+            <ul>
+                <li>The table illustrates/shows/presents data on [chủ đề].</li>
+                <li>The given table provides information about the number of [đối tượng] in various [địa điểm/thời gian].</li>
+                <li>The table compares the figures for [đối tượng] across [địa điểm/thời gian].</li>
+            </ul>
+        </div>
+        
+        <div class="slide" data-slide-id="4">
+            <h3>Đoạn 1: Mở bài (Interactive Practice)</h3>
+            <p><strong>Câu hỏi:</strong> "The table shows the number of people who participated in four different sports in the UK from 2005 to 2010." Hãy viết một câu mở bài bằng cách paraphrase câu hỏi này.</p>
+            <textarea id="q4_answer" placeholder="Viết câu trả lời của bạn tại đây..."></textarea>
+            <button onclick="checkAnswer('q4', 'The given table illustrates the number of individuals who took part in four different sports in the UK between 2005 and 2010.')">Kiểm tra</button>
+            <div id="q4_feedback" class="feedback"></div>
+        </div>
+
+        <div class="slide" data-slide-id="5">
+            <h3>Đoạn 2: Tổng quan (Overview)</h3>
+            <p>Tóm tắt những xu hướng hoặc đặc điểm nổi bật nhất. Hãy tìm các điểm sau:</p>
+            <ul>
+                <li>Giá trị lớn nhất và nhỏ nhất tổng thể.</li>
+                <li>Xu hướng chung (tăng, giảm, giữ nguyên).</li>
+                <li>Một điểm so sánh nổi bật.</li>
+            </ul>
+            <p><strong>Mẫu câu gợi ý:</strong></p>
+            <ul>
+                <li>Overall, it is clear that [đối tượng A] was the most popular, while [đối tượng B] was the least.</li>
+                <li>In general, there was a steady increase in the figures for [đối tượng A] over the period.</li>
+            </ul>
+        </div>
+
+        <div class="slide" data-slide-id="6">
+            <h3>Đoạn 2: Tổng quan (Interactive Practice)</h3>
+            <p><strong>Câu hỏi:</strong> Nhìn vào bảng dưới đây. Viết một câu tổng quan tóm tắt xu hướng chính.</p>
+            <p><strong>Bảng dữ liệu:</strong> Số lượng sinh viên quốc tế (nghìn) tại Úc</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Năm</th>
+                        <th>2010</th>
+                        <th>2015</th>
+                        <th>2020</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Trung Quốc</td>
+                        <td>100</td>
+                        <td>130</td>
+                        <td>155</td>
+                    </tr>
+                    <tr>
+                        <td>Ấn Độ</td>
+                        <td>70</td>
+                        <td>85</td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>Việt Nam</td>
+                        <td>15</td>
+                        <td>25</td>
+                        <td>40</td>
+                    </tr>
+                </tbody>
+            </table>
+            <textarea id="q6_answer" placeholder="Viết câu trả lời của bạn tại đây..."></textarea>
+            <button onclick="checkAnswer('q6', 'Overall, the number of international students from all three countries increased steadily throughout the period, with China consistently having the highest figures.')">Kiểm tra</button>
+            <div id="q6_feedback" class="feedback"></div>
+        </div>
+        
+        <div class="slide" data-slide-id="7">
+            <h3>Thì và Thể (Tense and Voice)</h3>
+            <p>Sử dụng **thì quá khứ đơn** (Simple Past) nếu bảng dữ liệu chỉ có các mốc thời gian trong quá khứ.</p>
+            <p>Sử dụng **thì hiện tại đơn** (Simple Present) nếu bảng dữ liệu là một sự thật chung hoặc so sánh các đối tượng ở cùng một thời điểm.</p>
+            <p>Sử dụng **thì hiện tại hoàn thành** (Present Perfect) hoặc **thì hiện tại đơn** để mô tả xu hướng từ quá khứ đến hiện tại.</p>
+            <div class="example-box">
+                Ví dụ:<br>
+                - The figure **was** 50% in 1990.<br>
+                - The population **has increased** from 10,000 to 15,000.
+            </div>
+        </div>
+
+        <div class="slide" data-slide-id="8">
+            <h3>Luyện tập Thì và Thể</h3>
+            <p><strong>Câu hỏi:</strong> Hoàn thành câu sau:</p>
+            <p>"The number of tourists (tăng) sharply from 2000 to 2010."</p>
+            <textarea id="q8_answer" placeholder="Viết câu trả lời của bạn tại đây..."></textarea>
+            <button onclick="checkAnswer('q8', 'increased')">Kiểm tra</button>
+            <div id="q8_feedback" class="feedback"></div>
+        </div>
+
+        <div class="slide" data-slide-id="9">
+            <h3>Từ vựng mô tả xu hướng</h3>
+            <p>Hãy sử dụng các từ vựng này để mô tả sự thay đổi của số liệu:</p>
+            <ul>
+                <li><strong>Tăng:</strong> increase, rise, grow, climb, soar</li>
+                <li><strong>Giảm:</strong> decrease, fall, drop, decline, plummet</li>
+                <li><strong>Ổn định:</strong> remain stable/unchanged, level off, stagnate</li>
+                <li><strong>Dao động:</strong> fluctuate, vary</li>
+            </ul>
+        </div>
+        
+        <div class="slide" data-slide-id="10">
+            <h3>Luyện tập Từ vựng xu hướng</h3>
+            <p><strong>Câu hỏi:</strong> Viết một câu mô tả số liệu "tăng đáng kể" từ 20% lên 50%.</p>
+            <textarea id="q10_answer" placeholder="Viết câu trả lời của bạn tại đây..."></textarea>
+            <button onclick="checkAnswer('q10', 'The figure for X increased significantly from 20% to 50%.')">Kiểm tra</button>
+            <div id="q10_feedback" class="feedback"></div>
+        </div>
+
+        <div class="slide" data-slide-id="11">
+            <h3>Từ vựng so sánh</h3>
+            <p>Sử dụng các cấu trúc này để so sánh các số liệu:</p>
+            <ul>
+                <li><strong>So sánh hơn/kém:</strong> higher/lower than, more/less than</li>
+                <li><strong>So sánh nhất:</strong> the highest/lowest, the most/least</li>
+                <li><strong>So sánh bằng:</strong> as many/much as, similar to</li>
+            </ul>
+        </div>
+
+        <div class="slide" data-slide-id="12">
+            <h3>Luyện tập Từ vựng so sánh</h3>
+            <p><strong>Câu hỏi:</strong> Sử dụng từ "the highest" để mô tả số liệu 80% của một đối tượng.</p>
+            <textarea id="q12_answer" placeholder="Viết câu trả lời của bạn tại đây..."></textarea>
+            <button onclick="checkAnswer('q12', 'The figure for X was the highest at 80%.')">Kiểm tra</button>
+            <div id="q12_feedback" class="feedback"></div>
+        </div>
+
+        <div class="slide" data-slide-id="13">
+            <h3>Cấu trúc câu phức</h3>
+            <p>Để đạt điểm cao về ngữ pháp, hãy sử dụng đa dạng các cấu trúc câu phức để kết nối các ý tưởng.</p>
+            <div class="example-box">
+                Ví dụ:<br>
+                - **While** the figure for A increased, that of B decreased.<br>
+                - The population of Country C was 10 million, **which** was 5 million lower than Country D.<br>
+                - **Despite** a slight drop in 2005, the number of tourists recovered in the following years.
+            </div>
+        </div>
+
+        <div class="slide" data-slide-id="14">
+            <h3>Lỗi thường gặp 1: Thiếu Overview ❌</h3>
+            <div class="warning-box">
+                Không có Overview sẽ khiến bài viết thiếu tính tổng quan và làm giảm điểm **Task Achievement**.
+            </div>
+            <p>Luôn nhớ: Overview là phần tóm tắt những đặc điểm chính, không đi vào chi tiết.</p>
+        </div>
+
+        <div class="slide" data-slide-id="15">
+            <h3>Lỗi thường gặp 2: Liệt kê tất cả số liệu ❌</h3>
+            <div class="warning-box">
+                Dạng bài này không yêu cầu bạn chép lại toàn bộ bảng. Việc liệt kê quá nhiều số liệu sẽ khiến bài viết trở nên nhàm chán và thiếu tính phân tích.
+            </div>
+            <p>Hãy tập trung vào những con số quan trọng nhất: cao nhất, thấp nhất, điểm giao nhau, xu hướng lớn.</p>
+        </div>
+        
+        <div class="slide" data-slide-id="16">
+            <h3>Lỗi thường gặp 3: Thiếu so sánh ❌</h3>
+            <div class="warning-box">
+                Bài viết chỉ mô tả từng số liệu một cách độc lập mà không so sánh, đối chiếu sẽ bị đánh giá thấp ở tiêu chí **Coherence and Cohesion**.
+            </div>
+            <p>Hãy tìm cách so sánh các con số với nhau, ví dụ: "A was twice as large as B", "C was significantly higher than D".</p>
+        </div>
+
+        <div class="slide" data-slide-id="17">
+            <h3>Tiêu chí chấm bài: Task Achievement (25%)</h3>
+            <p>Đối với dạng Table, bạn cần:</p>
+            <ul>
+                <li>Mô tả các đặc điểm quan trọng nhất của bảng.</li>
+                <li>Trình bày một Overview rõ ràng.</li>
+                <li>Hỗ trợ các ý chính bằng số liệu có chọn lọc.</li>
+                <li>Không bỏ sót thông tin quan trọng.</li>
+            </ul>
+        </div>
+        
+        <div class="slide" data-slide-id="18">
+            <h3>Tiêu chí chấm bài: Coherence and Cohesion (25%)</h3>
+            <p>Để đạt điểm cao ở tiêu chí này, bài viết của bạn phải:</p>
+            <ul>
+                <li>Có bố cục rõ ràng (Mở bài, Overview, Thân bài).</li>
+                <li>Sử dụng các từ nối (linking words) một cách hợp lý và đa dạng.</li>
+                <li>Các ý liên kết chặt chẽ với nhau, dễ theo dõi.</li>
+            </ul>
+        </div>
+
+        <div class="slide" data-slide-id="19">
+            <h3>Tiêu chí chấm bài: Lexical Resource (25%)</h3>
+            <p>Hãy chứng tỏ vốn từ vựng phong phú của bạn bằng cách:</p>
+            <ul>
+                <li>Sử dụng từ vựng chính xác để mô tả xu hướng và so sánh.</li>
+                <li>Đa dạng hóa từ đồng nghĩa (rise, increase, grow...).</li>
+                <li>Sử dụng các collocations tự nhiên.</li>
+            </ul>
+        </div>
+
+        <div class="slide" data-slide-id="20">
+            <h3>Tiêu chí chấm bài: Grammatical Range and Accuracy (25%)</h3>
+            <p>Để đạt điểm tốt ngữ pháp, bạn cần:</p>
+            <ul>
+                <li>Sử dụng đa dạng cấu trúc ngữ pháp (câu đơn, câu ghép, câu phức).</li>
+                <li>Sử dụng chính xác thì và thể.</li>
+                <li>Kiểm soát tốt các lỗi ngữ pháp cơ bản.</li>
+            </ul>
+        </div>
+        
+        <div class="slide" data-slide-id="21">
+            <h3>Luyện tập tổng hợp</h3>
+            <p><strong>Câu hỏi:</strong> Dựa vào bảng dữ liệu, viết một câu so sánh số liệu của Trung Quốc với Ấn Độ trong năm 2020.</p>
+            <p><strong>Bảng dữ liệu:</strong> Số lượng sinh viên quốc tế (nghìn) tại Úc</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Năm</th>
+                        <th>2010</th>
+                        <th>2015</th>
+                        <th>2020</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Trung Quốc</td>
+                        <td>100</td>
+                        <td>130</td>
+                        <td>155</td>
+                    </tr>
+                    <tr>
+                        <td>Ấn Độ</td>
+                        <td>70</td>
+                        <td>85</td>
+                        <td>110</td>
+                    </tr>
+                </tbody>
+            </table>
+            <textarea id="q21_answer" placeholder="Viết câu trả lời của bạn tại đây..."></textarea>
+            <button onclick="checkAnswer('q21', 'In 2020, the number of students from China was significantly higher than that of India, at 155,000 and 110,000 respectively.')">Kiểm tra</button>
+            <div id="q21_feedback" class="feedback"></div>
+        </div>
+
+        <div class="slide" data-slide-id="22">
+            <h3>Lời khuyên hữu ích 💡</h3>
+            <ul>
+                <li>Đọc lướt qua bảng để nắm bắt nội dung tổng thể.</li>
+                <li>Tìm kiếm các điểm cực đại/cực tiểu, xu hướng tăng/giảm rõ rệt.</li>
+                <li>Viết phần Overview trước khi đi vào chi tiết.</li>
+                <li>Nhóm các số liệu liên quan để dễ dàng so sánh trong thân bài.</li>
+            </ul>
+        </div>
+
+        <div class="slide" data-slide-id="23">
+            <h3>Cách làm bài hiệu quả</h3>
+            <p>1. **Phân tích đề:** Đọc kỹ tiêu đề bảng, các hàng và cột để hiểu dữ liệu.</p>
+            <p>2. **Tìm các điểm nổi bật:** Xác định 2-3 điểm đáng chú ý nhất để đưa vào Overview.</p>
+            <p>3. **Viết thân bài:** Mô tả chi tiết từng điểm nổi bật đã xác định, sử dụng từ vựng và cấu trúc đa dạng.</p>
+            <p>4. **Kiểm tra lại:** Dành 2-3 phút cuối để sửa lỗi ngữ pháp, chính tả.</p>
+        </div>
+
+        <div class="slide" data-slide-id="24">
+            <h3>Kiểm tra nhanh kiến thức</h3>
+            <p><strong>Câu hỏi:</strong> Khi nào thì nên dùng thì quá khứ đơn (Simple Past) khi viết về dạng Table?</p>
+            <textarea id="q24_answer" placeholder="Viết câu trả lời của bạn tại đây..."></textarea>
+            <button onclick="checkAnswer('q24', 'Thì quá khứ đơn được dùng để mô tả các số liệu hoặc xu hướng đã xảy ra và kết thúc trong một mốc thời gian cụ thể trong quá khứ.')">Kiểm tra</button>
+            <div id="q24_feedback" class="feedback"></div>
+        </div>
+
+        <div class="slide" data-slide-id="25">
+            <h3>Chúc mừng! 🎉 Bạn đã hoàn thành bài giảng!</h3>
+            <p>Bây giờ bạn đã có đủ kiến thức để tự tin xử lý dạng bài Table. Hãy bắt đầu luyện tập với các đề thi thật để củng cố kỹ năng của mình nhé!</p>
+            <p>Good luck with your IELTS exam! 👍</p>
+        </div>
+
+    </div>
+
+    <div id="slide-counter">1/25</div>
+    
+    <div class="controls">
+        <button id="prevBtn">Quay lại</button>
+        <button id="nextBtn">Tiếp tục</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideCounter = document.getElementById('slide-counter');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+            slideCounter.textContent = `${index + 1}/${slides.length}`;
+            prevBtn.disabled = index === 0;
+            nextBtn.disabled = index === slides.length - 1;
+        }
+
+        prevBtn.addEventListener('click', function() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        });
+
+        nextBtn.addEventListener('click', function() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        });
+
+        window.checkAnswer = function(questionId, correctAnswer) {
+            const textarea = document.getElementById(`${questionId}_answer`);
+            const feedbackDiv = document.getElementById(`${questionId}_feedback`);
+            const userAnswer = textarea.value.trim();
+            const normalizedUserAnswer = userAnswer.replace(/[\.,\?!\s]/g, '').toLowerCase();
+            const normalizedCorrectAnswer = correctAnswer.replace(/[\.,\?!\s]/g, '').toLowerCase();
+
+            if (normalizedUserAnswer.includes(normalizedCorrectAnswer) || normalizedCorrectAnswer.includes(normalizedUserAnswer)) {
+                feedbackDiv.textContent = 'Chính xác! 🎉';
+                feedbackDiv.className = 'feedback correct';
+            } else {
+                feedbackDiv.textContent = `Chưa chính xác. Đáp án đúng là: "${correctAnswer}"`;
+                feedbackDiv.className = 'feedback incorrect';
+            }
+            feedbackDiv.style.display = 'block';
+        };
+
+        showSlide(currentSlide);
+    });
+</script>
+
+</body>
+</html>
